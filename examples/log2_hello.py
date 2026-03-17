@@ -10,4 +10,5 @@ from log3 import Log2, DEBUG
 log = Log2("/tmp/gpylib_logs", "hello", level=DEBUG)
 log.info("Hello, World!")
 log.print(3, "Hello, World!{}, {}", 30, "hi")
+log.print(3, "Hello, World!%d, %s", 30, "hi")
 log.close()
